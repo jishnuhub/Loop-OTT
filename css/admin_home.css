@@ -1,0 +1,75 @@
+/*edited by abhishek*/
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a global box-sizing border-box for easier layout calculations */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the main content section */
+main {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.a {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: 48%;
+}
+
+/* .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: 48%;
+    margin-top: 20px;
+} */
+
+
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent effect */
+    backdrop-filter: blur(10px); /* Slight blur effect for better visibility */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: 48%;
+    color: #fff; /* Set text color to white */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card:hover{
+    color: #ffcc00;
+    border: 0.5px solid #ffcc00;
+}
+
+.a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
